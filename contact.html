@@ -20,15 +20,24 @@
             <img src="images/done_it logo.png" alt="Done-it">
         </a>
         <ul class="nav-links">
-            <li><a href="functionaliteiten.html">Functionaliteiten</a></li>
-            <li><a href="hoe-het-werkt.html">Hoe het werkt</a></li>
-            <li><a href="aan-de-slag.html">Aan de slag</a></li>
-            <li><a href="over-ons.html">Over ons</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="functionaliteiten.html" data-i18n="nav.features">Functionaliteiten</a></li>
+            <li><a href="hoe-het-werkt.html" data-i18n="nav.how">Hoe het werkt</a></li>
+            <li><a href="aan-de-slag.html" data-i18n="nav.get_started">Aan de slag</a></li>
+            <li><a href="over-ons.html" data-i18n="nav.about">Over ons</a></li>
+            <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <div class="nav-cta">
-            <a href="https://app.done-it.app" class="nav-login" target="_blank">Inloggen</a>
-            <a href="https://done-it.app/proefperiode" class="btn btn-primary" target="_blank">Gratis proberen</a>
+            <div class="lang-switcher">
+                <button class="lang-current" aria-expanded="false" aria-haspopup="listbox">🇧🇪 NL</button>
+                <ul class="lang-dropdown" role="listbox">
+                    <li><a href="#" data-lang="nl" class="lang-active">🇧🇪 Nederlands</a></li>
+                    <li><a href="#" data-lang="fr">🇫🇷 Français</a></li>
+                    <li><a href="#" data-lang="en">🇬🇧 English</a></li>
+                    <li><a href="#" data-lang="es">🇪🇸 Español</a></li>
+                </ul>
+            </div>
+            <a href="https://app.done-it.app" class="nav-login" target="_blank" data-i18n="nav.login">Inloggen</a>
+            <a href="https://done-it.app/proefperiode" class="btn btn-primary" target="_blank" data-i18n="nav.try_free">Gratis proberen</a>
         </div>
         <div class="hamburger" id="hamburger">
             <span></span><span></span><span></span>
@@ -42,9 +51,9 @@
     <div class="hero-blob hero-blob-1"></div>
     <div class="hero-blob hero-blob-2"></div>
     <div class="page-hero-inner">
-        <span class="tag tag-white">Contact</span>
-        <h1>Neem <span style="color: var(--accent);">contact op</span></h1>
-        <p class="page-hero-sub">
+        <span class="tag tag-white" data-i18n="contact.hero_tag">Contact</span>
+        <h1 data-i18n-html="contact.hero_h1">Neem <span style="color: var(--accent);">contact op</span></h1>
+        <p class="page-hero-sub" data-i18n="contact.hero_sub">
             Heb je vragen over Done-it, wil je een demo of heb je ondersteuning nodig? We staan voor je klaar.
         </p>
     </div>
@@ -56,21 +65,21 @@
         <div class="contact-info-grid">
             <div class="contact-info-card reveal">
                 <span class="ci-icon">📧</span>
-                <h3>E-mail</h3>
-                <p>Stuur ons een e-mail en we antwoorden zo snel mogelijk, doorgaans binnen één werkdag.</p>
+                <h3 data-i18n="contact.email_title">E-mail</h3>
+                <p data-i18n="contact.email_desc">Stuur ons een e-mail en we antwoorden zo snel mogelijk, doorgaans binnen één werkdag.</p>
                 <a href="mailto:info@done-it.app">info@done-it.app</a>
             </div>
             <div class="contact-info-card reveal delay-1">
                 <span class="ci-icon">📞</span>
-                <h3>Telefoon</h3>
-                <p>Bereikbaar tijdens kantooruren. Liever teruggebeld worden? Stuur dan een e-mail of WhatsApp.</p>
+                <h3 data-i18n="contact.phone_title">Telefoon</h3>
+                <p data-i18n="contact.phone_desc">Bereikbaar tijdens kantooruren. Liever teruggebeld worden? Stuur dan een e-mail of WhatsApp.</p>
                 <a href="tel:+32473735794">+32 473 73 57 94</a>
             </div>
             <div class="contact-info-card reveal delay-2">
                 <span class="ci-icon">💬</span>
-                <h3>WhatsApp</h3>
-                <p>Voor snelle vragen of support. Stuur ons een bericht via WhatsApp en we reageren snel.</p>
-                <a href="https://wa.me/+32473735794" target="_blank">Chat openen</a>
+                <h3 data-i18n="contact.wa_title">WhatsApp</h3>
+                <p data-i18n="contact.wa_desc">Voor snelle vragen of support. Stuur ons een bericht via WhatsApp en we reageren snel.</p>
+                <a href="https://wa.me/+32473735794" target="_blank" data-i18n="contact.wa_link">Chat openen</a>
             </div>
         </div>
     </div>
@@ -82,25 +91,25 @@
         <div class="contact-layout">
 
             <div class="reveal">
-                <span class="tag tag-blue">Contactformulier</span>
-                <h2 class="section-title" style="margin: 14px 0 16px;">Stuur ons een bericht</h2>
-                <p style="color: var(--text-gray); font-size: 16px; line-height: 1.75; margin-bottom: 28px;">
+                <span class="tag tag-blue" data-i18n="contact.hero_tag">Contactformulier</span>
+                <h2 class="section-title" style="margin: 14px 0 16px;" data-i18n="contact.form_title">Stuur ons een bericht</h2>
+                <p style="color: var(--text-gray); font-size: 16px; line-height: 1.75; margin-bottom: 28px;" data-i18n="contact.form_sub">
                     Vul het formulier in en we nemen zo snel mogelijk contact met je op — doorgaans binnen één werkdag.
                 </p>
                 <div style="display: flex; flex-direction: column; gap: 16px;">
                     <div style="display: flex; align-items: center; gap: 12px; color: var(--text-gray); font-size: 14.5px;">
-                        <span style="font-size: 20px;">✓</span> We antwoorden binnen één werkdag
+                        <span style="font-size: 20px;">✓</span> <span data-i18n="contact.form_check1">We antwoorden binnen één werkdag</span>
                     </div>
                     <div style="display: flex; align-items: center; gap: 12px; color: var(--text-gray); font-size: 14.5px;">
-                        <span style="font-size: 20px;">✓</span> Gratis advies &amp; demo mogelijk
+                        <span style="font-size: 20px;">✓</span> <span data-i18n="contact.form_check2">Gratis advies &amp; demo mogelijk</span>
                     </div>
                     <div style="display: flex; align-items: center; gap: 12px; color: var(--text-gray); font-size: 14.5px;">
-                        <span style="font-size: 20px;">✓</span> Geen verkooppraatje, gewoon eerlijk advies
+                        <span style="font-size: 20px;">✓</span> <span data-i18n="contact.form_check3">Geen verkooppraatje, gewoon eerlijk advies</span>
                     </div>
                 </div>
 
                 <div style="background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; margin-top: 36px;">
-                    <div style="font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-gray); margin-bottom: 12px;">Bedrijfsgegevens</div>
+                    <div style="font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-gray); margin-bottom: 12px;" data-i18n="contact.form_info_title">Bedrijfsgegevens</div>
                     <div style="font-size: 14.5px; color: var(--text-dark); line-height: 2;">
                         Done-it International BV<br>
                         BTW: BE 0863.363.148
@@ -112,45 +121,45 @@
                 <form action="mailto:info@done-it.app" method="post" enctype="text/plain" style="background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 40px;">
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
                         <div class="contact-form-group">
-                            <label for="voornaam">Voornaam *</label>
+                            <label for="voornaam" data-i18n="contact.lbl_first">Voornaam *</label>
                             <input type="text" id="voornaam" name="voornaam" placeholder="Jan" required>
                         </div>
                         <div class="contact-form-group">
-                            <label for="achternaam">Achternaam *</label>
+                            <label for="achternaam" data-i18n="contact.lbl_last">Achternaam *</label>
                             <input type="text" id="achternaam" name="achternaam" placeholder="Janssens" required>
                         </div>
                     </div>
                     <div class="contact-form-group">
-                        <label for="email">E-mailadres *</label>
+                        <label for="email" data-i18n="contact.lbl_email">E-mailadres *</label>
                         <input type="email" id="email" name="email" placeholder="jan@bedrijf.be" required>
                     </div>
                     <div class="contact-form-group">
-                        <label for="tel">Telefoonnummer</label>
+                        <label for="tel" data-i18n="contact.lbl_phone">Telefoonnummer</label>
                         <input type="tel" id="tel" name="telefoon" placeholder="+32 ...">
                     </div>
                     <div class="contact-form-group">
-                        <label for="bedrijf">Bedrijfsnaam</label>
+                        <label for="bedrijf" data-i18n="contact.lbl_company">Bedrijfsnaam</label>
                         <input type="text" id="bedrijf" name="bedrijf" placeholder="Jouw bedrijf BV">
                     </div>
                     <div class="contact-form-group">
-                        <label for="onderwerp">Onderwerp *</label>
+                        <label for="onderwerp" data-i18n="contact.lbl_subject">Onderwerp *</label>
                         <select id="onderwerp" name="onderwerp" required>
-                            <option value="" disabled selected>Kies een onderwerp</option>
-                            <option value="demo">Ik wil een demo</option>
-                            <option value="vraag">Ik heb een vraag</option>
-                            <option value="support">Ik heb support nodig</option>
-                            <option value="prijs">Vraag over prijs &amp; abonnement</option>
-                            <option value="anders">Anders</option>
+                            <option value="" disabled selected data-i18n="contact.opt_default">Kies een onderwerp</option>
+                            <option value="demo" data-i18n="contact.opt1">Ik wil een demo</option>
+                            <option value="vraag" data-i18n="contact.opt2">Ik heb een vraag</option>
+                            <option value="support" data-i18n="contact.opt3">Ik heb support nodig</option>
+                            <option value="prijs" data-i18n="contact.opt4">Vraag over prijs &amp; abonnement</option>
+                            <option value="anders" data-i18n="contact.opt5">Anders</option>
                         </select>
                     </div>
                     <div class="contact-form-group">
-                        <label for="bericht">Bericht *</label>
+                        <label for="bericht" data-i18n="contact.lbl_msg">Bericht *</label>
                         <textarea id="bericht" name="bericht" placeholder="Vertel ons waarmee we je kunnen helpen..." required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 16px; padding: 15px 26px;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 16px; padding: 15px 26px;" data-i18n="contact.submit">
                         Bericht versturen →
                     </button>
-                    <p style="font-size: 12px; color: var(--text-gray); margin-top: 14px; text-align: center;">
+                    <p style="font-size: 12px; color: var(--text-gray); margin-top: 14px; text-align: center;" data-i18n-html="contact.privacy">
                         Door te verzenden ga je akkoord met ons <a href="https://done-it.app/privacybeleid" target="_blank" style="color: var(--primary-light);">privacybeleid</a>.
                     </p>
                 </form>
@@ -166,14 +175,14 @@
     <div class="cta-blob-2"></div>
     <div class="container">
         <div class="cta-inner reveal">
-            <span class="tag tag-white">30 dagen gratis</span>
-            <h2>Liever meteen starten?</h2>
-            <p>Start direct je gratis proefperiode van 30 dagen<br>en ontdek Done-it zonder verplichtingen.</p>
+            <span class="tag tag-white" data-i18n="contact.cta_tag">30 dagen gratis</span>
+            <h2 data-i18n="contact.cta_title">Liever meteen starten?</h2>
+            <p data-i18n-html="contact.cta_sub">Start direct je gratis proefperiode van 30 dagen<br>en ontdek Done-it zonder verplichtingen.</p>
             <div class="cta-btns">
-                <a href="https://done-it.app/proefperiode" class="btn btn-primary" target="_blank">Start mijn gratis proefperiode</a>
-                <a href="aan-de-slag.html" class="btn btn-ghost" style="border-color:rgba(255,255,255,0.35);">Bekijk de startgids</a>
+                <a href="https://done-it.app/proefperiode" class="btn btn-primary" target="_blank" data-i18n="contact.cta_btn1">Start mijn gratis proefperiode</a>
+                <a href="aan-de-slag.html" class="btn btn-ghost" style="border-color:rgba(255,255,255,0.35);" data-i18n="contact.cta_btn2">Bekijk de startgids</a>
             </div>
-            <div class="trial-bubble">✓ Geen bankkaart vereist &nbsp;·&nbsp; <strong>Alle features inbegrepen</strong> &nbsp;·&nbsp; Annuleer wanneer je wilt</div>
+            <div class="trial-bubble" data-i18n-html="contact.cta_bubble">✓ Geen bankkaart vereist &nbsp;·&nbsp; <strong>Alle features inbegrepen</strong> &nbsp;·&nbsp; Annuleer wanneer je wilt</div>
         </div>
     </div>
 </section>
@@ -183,50 +192,53 @@
     <div class="footer-top">
         <div class="footer-about">
             <div class="footer-logo"><img src="images/done_it logo.png" alt="Done-it"></div>
-            <p>Tijdsregistratie en projectbeheer op locatie. Done-it is de slimme app voor bedrijven die hun medewerkers naar klanten of locaties sturen.</p>
+            <p data-i18n="footer.desc">Tijdsregistratie en projectbeheer op locatie. Done-it is de slimme app voor bedrijven die hun medewerkers naar klanten of locaties sturen.</p>
             <ul class="footer-contact-list">
-                <li>Done-it International BV &nbsp;|&nbsp; BE 0863.363.148</li>
+                <li data-i18n="footer.company">Done-it International BV &nbsp;|&nbsp; BE 0863.363.148</li>
                 <li><a href="mailto:info@done-it.app">info@done-it.app</a></li>
                 <li><a href="tel:+32473735794">+32 473 73 57 94</a></li>
             </ul>
         </div>
         <div>
-            <div class="footer-col-title">Done-it</div>
+            <div class="footer-col-title" data-i18n="footer.col1_title">Done-it</div>
             <ul class="footer-col-links">
-                <li><a href="functionaliteiten.html">Functionaliteiten</a></li>
-                <li><a href="over-ons.html">Over ons</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://done-it.app/proefperiode" target="_blank">Gratis proberen</a></li>
+                <li><a href="functionaliteiten.html" data-i18n="footer.col1_1">Functionaliteiten</a></li>
+                <li><a href="over-ons.html" data-i18n="footer.col1_2">Over ons</a></li>
+                <li><a href="contact.html" data-i18n="footer.col1_3">Contact</a></li>
+                <li><a href="https://done-it.app/proefperiode" target="_blank" data-i18n="footer.col1_4">Gratis proberen</a></li>
             </ul>
         </div>
         <div>
-            <div class="footer-col-title">Snel van start</div>
+            <div class="footer-col-title" data-i18n="footer.col2_title">Snel van start</div>
             <ul class="footer-col-links">
-                <li><a href="aan-de-slag.html">Startgids</a></li>
-                <li><a href="aan-de-slag.html#faq">FAQ</a></li>
-                <li><a href="aan-de-slag.html#videos">Trainingsvideos</a></li>
+                <li><a href="aan-de-slag.html" data-i18n="footer.col2_1">Startgids</a></li>
+                <li><a href="aan-de-slag.html#faq" data-i18n="footer.col2_2">FAQ</a></li>
+                <li><a href="aan-de-slag.html#videos" data-i18n="footer.col2_3">Trainingsvideos</a></li>
             </ul>
         </div>
         <div>
-            <div class="footer-col-title">Contact</div>
+            <div class="footer-col-title" data-i18n="footer.col3_title">Contact</div>
             <ul class="footer-col-links">
-                <li><a href="contact.html">Contactformulier</a></li>
-                <li><a href="https://wa.me/+32473735794" target="_blank">WhatsApp</a></li>
-                <li><a href="https://done-it.app/algemene-voorwaarden" target="_blank">Algemene voorwaarden</a></li>
-                <li><a href="https://done-it.app/privacybeleid" target="_blank">Privacybeleid</a></li>
+                <li><a href="contact.html" data-i18n="footer.col3_1">Contactformulier</a></li>
+                <li><a href="https://wa.me/+32473735794" target="_blank" data-i18n="footer.col3_2">WhatsApp</a></li>
+                <li><a href="algemene-voorwaarden.html" data-i18n="footer.col3_3">Algemene voorwaarden</a></li>
+                <li><a href="privacybeleid.html" data-i18n="footer.col3_4">Privacybeleid</a></li>
             </ul>
         </div>
     </div>
     <div class="footer-bottom">
-        <span>©2026 Done-it app tijdsregistratie. Alle rechten voorbehouden.</span>
+        <span data-i18n="footer.copyright">©2026 Done-it app tijdsregistratie. Alle rechten voorbehouden.</span>
         <div class="footer-legal">
-            <a href="https://done-it.app/algemene-voorwaarden" target="_blank">Algemene voorwaarden</a>
-            <a href="https://done-it.app/privacybeleid" target="_blank">Privacybeleid</a>
+            <a href="algemene-voorwaarden.html" data-i18n="footer.col3_3">Algemene voorwaarden</a>
+            <a href="privacybeleid.html">Privacybeleid</a>
         </div>
     </div>
 </footer>
 
-<a href="https://wa.me/+32473735794" class="wa-float" title="Chat via WhatsApp" target="_blank">💬</a>
+<!-- AI Chat Widget -->
+<script src="chatbot.js"></script>
+<script src="i18n/translations.js"></script>
+<script src="i18n.js"></script>
 
 <script>
     const navbar = document.getElementById('navbar');
@@ -235,6 +247,17 @@
         entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); revealObs.unobserve(e.target); } });
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+    document.querySelector('.lang-current')?.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        this.nextElementSibling.classList.toggle('open');
+    });
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.lang-switcher')) {
+            document.querySelectorAll('.lang-dropdown.open').forEach(d => d.classList.remove('open'));
+            document.querySelectorAll('.lang-current').forEach(b => b.setAttribute('aria-expanded', 'false'));
+        }
+    });
 </script>
 
 </body>

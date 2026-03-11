@@ -20,15 +20,24 @@
             <img src="images/done_it logo.png" alt="Done-it">
         </a>
         <ul class="nav-links">
-            <li><a href="functionaliteiten.html" class="active">Functionaliteiten</a></li>
-            <li><a href="hoe-het-werkt.html">Hoe het werkt</a></li>
-            <li><a href="aan-de-slag.html">Aan de slag</a></li>
-            <li><a href="over-ons.html">Over ons</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="functionaliteiten.html" class="active" data-i18n="nav.features">Functionaliteiten</a></li>
+            <li><a href="hoe-het-werkt.html" data-i18n="nav.how">Hoe het werkt</a></li>
+            <li><a href="aan-de-slag.html" data-i18n="nav.get_started">Aan de slag</a></li>
+            <li><a href="over-ons.html" data-i18n="nav.about">Over ons</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <div class="nav-cta">
-            <a href="https://app.done-it.app" class="nav-login" target="_blank">Inloggen</a>
-            <a href="https://done-it.app/proefperiode" class="btn btn-primary" target="_blank">Gratis proberen</a>
+            <div class="lang-switcher">
+                <button class="lang-current" aria-expanded="false" aria-haspopup="listbox">🇧🇪 NL</button>
+                <ul class="lang-dropdown" role="listbox">
+                    <li><a href="#" data-lang="nl">🇧🇪 Nederlands</a></li>
+                    <li><a href="#" data-lang="fr">🇫🇷 Français</a></li>
+                    <li><a href="#" data-lang="en">🇬🇧 English</a></li>
+                    <li><a href="#" data-lang="es">🇪🇸 Español</a></li>
+                </ul>
+            </div>
+            <a href="https://app.done-it.app" class="nav-login" target="_blank" data-i18n="nav.login">Inloggen</a>
+            <a href="https://done-it.app/proefperiode" class="btn btn-primary" target="_blank" data-i18n="nav.try_free">Gratis proberen</a>
         </div>
         <div class="hamburger" id="hamburger">
             <span></span><span></span><span></span>
@@ -42,14 +51,14 @@
     <div class="hero-blob hero-blob-1"></div>
     <div class="hero-blob hero-blob-2"></div>
     <div class="page-hero-inner">
-        <span class="tag tag-white">Functionaliteiten</span>
-        <h1>Alles wat je nodig hebt,<br>in <span style="color: var(--accent);">één app</span></h1>
-        <p class="page-hero-sub">
+        <span class="tag tag-white" data-i18n="features.hero_tag">Functionaliteiten</span>
+        <h1 data-i18n-html="features.hero_h1">Alles wat je nodig hebt,<br>in <span style="color: var(--accent);">één app</span></h1>
+        <p class="page-hero-sub" data-i18n="features.hero_sub">
             Done-it bundelt tijdregistratie, GPS check-in, projectbeheer en personeelsadministratie in één gebruiksvriendelijke smartphone app.
         </p>
         <div style="margin-top: 32px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-            <a href="https://done-it.app/proefperiode" class="btn btn-primary" target="_blank">Start gratis proefperiode</a>
-            <a href="hoe-het-werkt.html" class="btn btn-ghost">Hoe het werkt →</a>
+            <a href="https://done-it.app/proefperiode" class="btn btn-primary" target="_blank" data-i18n="features.hero_cta1">Start gratis proefperiode</a>
+            <a href="hoe-het-werkt.html" class="btn btn-ghost" data-i18n="features.hero_cta2">Hoe het werkt →</a>
         </div>
     </div>
 </section>
@@ -58,25 +67,25 @@
 <section class="benefits">
     <div class="container">
         <div class="section-header center reveal">
-            <span class="tag tag-blue">Voordelen</span>
-            <h2 class="section-title">Minder stress, meer overzicht</h2>
-            <p class="section-sub">Alles wat je nodig hebt om je team en projecten efficiënt te beheren, op één plek.</p>
+            <span class="tag tag-blue" data-i18n="features.benefits_tag">Voordelen</span>
+            <h2 class="section-title" data-i18n="features.benefits_title">Minder stress, meer overzicht</h2>
+            <p class="section-sub" data-i18n="features.benefits_sub">Alles wat je nodig hebt om je team en projecten efficiënt te beheren, op één plek.</p>
         </div>
         <div class="benefits-grid">
             <div class="benefit-card reveal">
                 <div class="benefit-icon">👁️</div>
-                <h3>Beter overzicht</h3>
-                <p>Makkelijk zien waar je medewerkers zijn en hoe lang ze er werken. Realtime inzicht in je hele team, waar je ook bent.</p>
+                <h3 data-i18n="features.b1_title">Beter overzicht</h3>
+                <p data-i18n="features.b1_desc">Makkelijk zien waar je medewerkers zijn en hoe lang ze er werken. Realtime inzicht in je hele team, waar je ook bent.</p>
             </div>
             <div class="benefit-card reveal delay-1">
                 <div class="benefit-icon">💬</div>
-                <h3>Betere communicatie</h3>
-                <p>Projectinformatie, updates en meldingen direct in de app. Geen losse sms'jes of telefoontjes meer nodig.</p>
+                <h3 data-i18n="features.b2_title">Betere communicatie</h3>
+                <p data-i18n="features.b2_desc">Projectinformatie, updates en meldingen direct in de app. Geen losse sms'jes of telefoontjes meer nodig.</p>
             </div>
             <div class="benefit-card reveal delay-2">
                 <div class="benefit-icon">⚡</div>
-                <h3>Minder administratie</h3>
-                <p>Loonadministratie en nacalculatie drastisch vereenvoudigen. Minder papierwerk, meer tijd voor wat echt telt.</p>
+                <h3 data-i18n="features.b3_title">Minder administratie</h3>
+                <p data-i18n="features.b3_desc">Loonadministratie en nacalculatie drastisch vereenvoudigen. Minder papierwerk, meer tijd voor wat echt telt.</p>
             </div>
         </div>
     </div>
@@ -86,80 +95,80 @@
 <section class="features" style="background: var(--surface);">
     <div class="container">
         <div class="section-header center reveal">
-            <span class="tag tag-blue">Alle functies</span>
-            <h2 class="section-title">12 krachtige functionaliteiten</h2>
-            <p class="section-sub">Van check-in tot rapportage — Done-it dekt elke stap in het beheer van je team op locatie.</p>
+            <span class="tag tag-blue" data-i18n="features.all_tag">Alle functies</span>
+            <h2 class="section-title" data-i18n="features.all_title">12 krachtige functionaliteiten</h2>
+            <p class="section-sub" data-i18n="features.all_sub">Van check-in tot rapportage — Done-it dekt elke stap in het beheer van je team op locatie.</p>
         </div>
 
-        <span class="features-category">⏱ Tijdregistratie &amp; aanwezigheid</span>
+        <span class="features-category" data-i18n="features.cat1">⏱ Tijdregistratie &amp; aanwezigheid</span>
         <div class="features-grid">
             <div class="feat-card reveal">
                 <div class="feat-icon">📍</div>
-                <h3>Tijdregistratie met GPS</h3>
-                <p>Efficiënte, papierloze aanwezigheidsregistratie. GPS koppelt werktijden aan de exacte locatie voor maximale betrouwbaarheid.</p>
+                <h3 data-i18n="features.f1_title">Tijdregistratie met GPS</h3>
+                <p data-i18n="features.f1_desc">Efficiënte, papierloze aanwezigheidsregistratie. GPS koppelt werktijden aan de exacte locatie voor maximale betrouwbaarheid.</p>
             </div>
             <div class="feat-card reveal delay-1">
                 <div class="feat-icon">📱</div>
-                <h3>Smartphone app</h3>
-                <p>Aankomst- en vertrektijden digitaal registreren via de app. iOS en Android. Altijd en overal beschikbaar.</p>
+                <h3 data-i18n="features.f2_title">Smartphone app</h3>
+                <p data-i18n="features.f2_desc">Aankomst- en vertrektijden digitaal registreren via de app. iOS en Android. Altijd en overal beschikbaar.</p>
             </div>
             <div class="feat-card reveal delay-2">
                 <div class="feat-icon">⏱️</div>
-                <h3>Resterende uren monitoren</h3>
-                <p>Automatische berekening van resterende projecturen met een handige countdown per project.</p>
+                <h3 data-i18n="features.f3_title">Resterende uren monitoren</h3>
+                <p data-i18n="features.f3_desc">Automatische berekening van resterende projecturen met een handige countdown per project.</p>
             </div>
         </div>
 
-        <span class="features-category">📋 Projectbeheer &amp; communicatie</span>
+        <span class="features-category" data-i18n="features.cat2">📋 Projectbeheer &amp; communicatie</span>
         <div class="features-grid">
             <div class="feat-card reveal">
                 <div class="feat-icon">📋</div>
-                <h3>Projectinfo delen</h3>
-                <p>Documentatie, taakomschrijvingen en werfregels direct in de app beschikbaar voor je team op locatie.</p>
+                <h3 data-i18n="features.f4_title">Projectinfo delen</h3>
+                <p data-i18n="features.f4_desc">Documentatie, taakomschrijvingen en werfregels direct in de app beschikbaar voor je team op locatie.</p>
             </div>
             <div class="feat-card reveal delay-1">
                 <div class="feat-icon">🔔</div>
-                <h3>Projectupdates</h3>
-                <p>Werknemers delen wijzigingen vanuit de app. Geen aparte sms'jes of telefoontjes meer nodig.</p>
+                <h3 data-i18n="features.f5_title">Projectupdates</h3>
+                <p data-i18n="features.f5_desc">Werknemers delen wijzigingen vanuit de app. Geen aparte sms'jes of telefoontjes meer nodig.</p>
             </div>
             <div class="feat-card reveal delay-2">
                 <div class="feat-icon">🗺️</div>
-                <h3>Navigeer naar locatie</h3>
-                <p>Met één druk navigeren medewerkers vanuit de app rechtstreeks naar het juiste projectadres.</p>
+                <h3 data-i18n="features.f6_title">Navigeer naar locatie</h3>
+                <p data-i18n="features.f6_desc">Met één druk navigeren medewerkers vanuit de app rechtstreeks naar het juiste projectadres.</p>
             </div>
             <div class="feat-card reveal">
                 <div class="feat-icon">☁️</div>
-                <h3>Cloud software</h3>
-                <p>Alle ingegeven data opvolgen en exporteren in de online softwaretoepassing, altijd en overal.</p>
+                <h3 data-i18n="features.f7_title">Cloud software</h3>
+                <p data-i18n="features.f7_desc">Alle ingegeven data opvolgen en exporteren in de online softwaretoepassing, altijd en overal.</p>
             </div>
             <div class="feat-card reveal delay-1">
                 <div class="feat-icon">🚗</div>
-                <h3>Kilometers bijhouden</h3>
-                <p>Werknemers registreren ritten met kilometers, vervoersmiddel en carpool-informatie moeiteloos.</p>
+                <h3 data-i18n="features.f8_title">Kilometers bijhouden</h3>
+                <p data-i18n="features.f8_desc">Werknemers registreren ritten met kilometers, vervoersmiddel en carpool-informatie moeiteloos.</p>
             </div>
             <div class="feat-card reveal delay-2">
                 <div class="feat-icon">🏗️</div>
-                <h3>Checkin@work koppeling</h3>
-                <p>Gebruiksvriendelijkere oplossing voor de Belgische bouw- en schoonmaaksector. Volledig conform de wetgeving.</p>
+                <h3 data-i18n="features.f9_title">Checkin@work koppeling</h3>
+                <p data-i18n="features.f9_desc">Gebruiksvriendelijkere oplossing voor de Belgische bouw- en schoonmaaksector. Volledig conform de wetgeving.</p>
             </div>
         </div>
 
-        <span class="features-category">👥 Personeelsbeheer</span>
+        <span class="features-category" data-i18n="features.cat3">👥 Personeelsbeheer</span>
         <div class="features-grid">
             <div class="feat-card reveal">
                 <div class="feat-icon">🏖️</div>
-                <h3>Verlof &amp; afwezigheden</h3>
-                <p>Snel verlof aanvragen en goedkeuren. Up-to-date overzicht van vakantiedagen voor iedereen in het team.</p>
+                <h3 data-i18n="features.f10_title">Verlof &amp; afwezigheden</h3>
+                <p data-i18n="features.f10_desc">Snel verlof aanvragen en goedkeuren. Up-to-date overzicht van vakantiedagen voor iedereen in het team.</p>
             </div>
             <div class="feat-card reveal delay-1">
                 <div class="feat-icon">📊</div>
-                <h3>Personeelsadministratie</h3>
-                <p>Compleet overzicht van alle gewerkte uren per project. Ideaal voor nacalculatie en loonberekening.</p>
+                <h3 data-i18n="features.f11_title">Personeelsadministratie</h3>
+                <p data-i18n="features.f11_desc">Compleet overzicht van alle gewerkte uren per project. Ideaal voor nacalculatie en loonberekening.</p>
             </div>
             <div class="feat-card reveal delay-2">
                 <div class="feat-icon">⏰</div>
-                <h3>Overuren bijhouden</h3>
-                <p>Overuren ingeven en kiezen voor uitbetaling of bijkomende vakantiedagen — direct in de app.</p>
+                <h3 data-i18n="features.f12_title">Overuren bijhouden</h3>
+                <p data-i18n="features.f12_desc">Overuren ingeven en kiezen voor uitbetaling of bijkomende vakantiedagen — direct in de app.</p>
             </div>
         </div>
     </div>
@@ -171,14 +180,14 @@
     <div class="cta-blob-2"></div>
     <div class="container">
         <div class="cta-inner reveal">
-            <span class="tag tag-white">30 dagen gratis</span>
-            <h2>Klaar om te starten?</h2>
-            <p>Probeer alle 12 functionaliteiten gratis gedurende 30 dagen.<br>Geen bankkaart vereist.</p>
+            <span class="tag tag-white" data-i18n="features.cta_tag">30 dagen gratis</span>
+            <h2 data-i18n="features.cta_title">Klaar om te starten?</h2>
+            <p data-i18n="features.cta_sub">Probeer alle 12 functionaliteiten gratis gedurende 30 dagen.<br>Geen bankkaart vereist.</p>
             <div class="cta-btns">
-                <a href="https://done-it.app/proefperiode" class="btn btn-primary" target="_blank">Start mijn gratis proefperiode</a>
-                <a href="contact.html" class="btn btn-ghost" style="border-color:rgba(255,255,255,0.35);">Contacteer ons</a>
+                <a href="https://done-it.app/proefperiode" class="btn btn-primary" target="_blank" data-i18n="features.cta_btn1">Start mijn gratis proefperiode</a>
+                <a href="contact.html" class="btn btn-ghost" style="border-color:rgba(255,255,255,0.35);" data-i18n="features.cta_btn2">Contacteer ons</a>
             </div>
-            <div class="trial-bubble">✓ Geen bankkaart vereist &nbsp;·&nbsp; <strong>Alle features inbegrepen</strong> &nbsp;·&nbsp; Annuleer wanneer je wilt</div>
+            <div class="trial-bubble" data-i18n="features.cta_bubble">✓ Geen bankkaart vereist &nbsp;·&nbsp; <strong>Alle features inbegrepen</strong> &nbsp;·&nbsp; Annuleer wanneer je wilt</div>
         </div>
     </div>
 </section>
@@ -188,50 +197,53 @@
     <div class="footer-top">
         <div class="footer-about">
             <div class="footer-logo"><img src="images/done_it logo.png" alt="Done-it"></div>
-            <p>Tijdsregistratie en projectbeheer op locatie. Done-it is de slimme app voor bedrijven die hun medewerkers naar klanten of locaties sturen.</p>
+            <p data-i18n="footer.desc">Tijdsregistratie en projectbeheer op locatie. Done-it is de slimme app voor bedrijven die hun medewerkers naar klanten of locaties sturen.</p>
             <ul class="footer-contact-list">
-                <li>Done-it International BV &nbsp;|&nbsp; BE 0863.363.148</li>
+                <li data-i18n="footer.company">Done-it International BV &nbsp;|&nbsp; BE 0863.363.148</li>
                 <li><a href="mailto:info@done-it.app">info@done-it.app</a></li>
                 <li><a href="tel:+32473735794">+32 473 73 57 94</a></li>
             </ul>
         </div>
         <div>
-            <div class="footer-col-title">Done-it</div>
+            <div class="footer-col-title" data-i18n="footer.col1_title">Done-it</div>
             <ul class="footer-col-links">
-                <li><a href="functionaliteiten.html">Functionaliteiten</a></li>
-                <li><a href="over-ons.html">Over ons</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://done-it.app/proefperiode" target="_blank">Gratis proberen</a></li>
+                <li><a href="functionaliteiten.html" data-i18n="footer.col1_1">Functionaliteiten</a></li>
+                <li><a href="over-ons.html" data-i18n="footer.col1_2">Over ons</a></li>
+                <li><a href="contact.html" data-i18n="footer.col1_3">Contact</a></li>
+                <li><a href="https://done-it.app/proefperiode" target="_blank" data-i18n="footer.col1_4">Gratis proberen</a></li>
             </ul>
         </div>
         <div>
-            <div class="footer-col-title">Snel van start</div>
+            <div class="footer-col-title" data-i18n="footer.col2_title">Snel van start</div>
             <ul class="footer-col-links">
-                <li><a href="aan-de-slag.html">Startgids</a></li>
-                <li><a href="aan-de-slag.html#faq">FAQ</a></li>
-                <li><a href="aan-de-slag.html#videos">Trainingsvideos</a></li>
+                <li><a href="aan-de-slag.html" data-i18n="footer.col2_1">Startgids</a></li>
+                <li><a href="aan-de-slag.html#faq" data-i18n="footer.col2_2">FAQ</a></li>
+                <li><a href="aan-de-slag.html#videos" data-i18n="footer.col2_3">Trainingsvideos</a></li>
             </ul>
         </div>
         <div>
-            <div class="footer-col-title">Contact</div>
+            <div class="footer-col-title" data-i18n="footer.col3_title">Contact</div>
             <ul class="footer-col-links">
-                <li><a href="contact.html">Contactformulier</a></li>
-                <li><a href="https://wa.me/+32473735794" target="_blank">WhatsApp</a></li>
-                <li><a href="https://done-it.app/algemene-voorwaarden" target="_blank">Algemene voorwaarden</a></li>
-                <li><a href="https://done-it.app/privacybeleid" target="_blank">Privacybeleid</a></li>
+                <li><a href="contact.html" data-i18n="footer.col3_1">Contactformulier</a></li>
+                <li><a href="https://wa.me/+32473735794" target="_blank" data-i18n="footer.col3_2">WhatsApp</a></li>
+                <li><a href="algemene-voorwaarden.html" data-i18n="footer.col3_3">Algemene voorwaarden</a></li>
+                <li><a href="privacybeleid.html" data-i18n="footer.col3_4">Privacybeleid</a></li>
             </ul>
         </div>
     </div>
     <div class="footer-bottom">
-        <span>©2026 Done-it app tijdsregistratie. Alle rechten voorbehouden.</span>
+        <span data-i18n="footer.copyright">©2026 Done-it app tijdsregistratie. Alle rechten voorbehouden.</span>
         <div class="footer-legal">
-            <a href="https://done-it.app/algemene-voorwaarden" target="_blank">Algemene voorwaarden</a>
-            <a href="https://done-it.app/privacybeleid" target="_blank">Privacybeleid</a>
+            <a href="algemene-voorwaarden.html" data-i18n="footer.col3_3">Algemene voorwaarden</a>
+            <a href="privacybeleid.html">Privacybeleid</a>
         </div>
     </div>
 </footer>
 
-<a href="https://wa.me/+32473735794" class="wa-float" title="Chat via WhatsApp" target="_blank">💬</a>
+<!-- AI Chat Widget -->
+<script src="chatbot.js"></script>
+<script src="i18n/translations.js"></script>
+<script src="i18n.js"></script>
 
 <script>
     const navbar = document.getElementById('navbar');
@@ -240,6 +252,17 @@
         entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); revealObs.unobserve(e.target); } });
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+    document.querySelector('.lang-current')?.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        this.nextElementSibling.classList.toggle('open');
+    });
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.lang-switcher')) {
+            document.querySelectorAll('.lang-dropdown.open').forEach(d => d.classList.remove('open'));
+            document.querySelectorAll('.lang-current').forEach(b => b.setAttribute('aria-expanded', 'false'));
+        }
+    });
 </script>
 
 </body>

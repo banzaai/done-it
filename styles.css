@@ -189,9 +189,11 @@ h1, h2, h3, h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap;
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 28px;
+    gap: 24px;
 }
 
 .nav-logo img {
@@ -202,8 +204,12 @@ h1, h2, h3, h4 {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: 28px;
     list-style: none;
+    flex: 1 1 auto;
+    min-width: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .nav-links a {
@@ -212,6 +218,7 @@ h1, h2, h3, h4 {
     font-size: 14.5px;
     font-weight: 500;
     transition: color 0.2s;
+    white-space: nowrap;
 }
 
 .nav-links a:hover { color: var(--primary); }
@@ -219,7 +226,49 @@ h1, h2, h3, h4 {
 .navbar.scrolled .nav-links a { color: var(--text-gray); }
 .navbar.scrolled .nav-links a:hover { color: var(--primary); }
 
-.nav-cta { display: flex; align-items: center; gap: 10px; }
+.nav-cta { display: flex; align-items: center; gap: 10px; flex: 0 0 auto; white-space: nowrap; }
+
+/* ── Language Switcher ── */
+.lang-switcher { position: relative; }
+.lang-current {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-dark);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+.lang-current:hover { background: var(--surface-2); }
+.lang-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.12);
+    list-style: none;
+    padding: 6px 0;
+    margin: 0;
+    min-width: 160px;
+    z-index: 1000;
+}
+.lang-dropdown.open { display: block; }
+.lang-dropdown li a {
+    display: block;
+    padding: 9px 18px;
+    font-size: 14px;
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: background 0.15s;
+    white-space: nowrap;
+}
+.lang-dropdown li a:hover { background: var(--surface); }
 
 .nav-login {
     font-size: 14px;
@@ -966,6 +1015,7 @@ footer {
     .nav-links         { display: none; }
     .hamburger         { display: flex; }
     .nav-login         { display: none; }
+    .lang-switcher     { order: -1; }
 
     .benefits-grid,
     .started-grid,
@@ -1016,6 +1066,65 @@ footer {
     max-width: 580px;
     margin: 0 auto;
     line-height: 1.75;
+}
+
+/* ===== Legal pages ===== */
+.legal-section {
+    background: var(--surface);
+    padding: 72px 0;
+}
+
+.legal-content {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    padding: clamp(24px, 4vw, 52px);
+}
+
+.legal-content h2 {
+    font-size: clamp(24px, 3vw, 32px);
+    color: var(--text-dark);
+    margin: 40px 0 14px;
+}
+
+.legal-content h2:first-child {
+    margin-top: 0;
+}
+
+.legal-content h3 {
+    font-size: 20px;
+    color: var(--text-dark);
+    margin: 24px 0 10px;
+}
+
+.legal-content p,
+.legal-content li {
+    color: var(--text-gray);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.legal-content p {
+    margin-bottom: 14px;
+}
+
+.legal-content ul {
+    margin: 0 0 16px;
+    padding-left: 24px;
+}
+
+.legal-content li {
+    margin-bottom: 8px;
+}
+
+.legal-content a {
+    color: var(--primary-light);
+    text-underline-offset: 2px;
+}
+
+.legal-content a:hover {
+    color: var(--primary);
 }
 
 /* Active nav link */
@@ -1196,4 +1305,28 @@ footer {
     .values-grid       { grid-template-columns: 1fr; }
     .contact-layout    { grid-template-columns: 1fr; }
     .company-stats     { grid-template-columns: repeat(2, 1fr); }
+    .legal-section     { padding: 56px 0; }
+    .legal-content p,
+    .legal-content li  { font-size: 15px; }
+}
+
+@media (max-width: 1200px) {
+    .nav-logo img      { height: 74px; }
+    .nav-inner         { gap: 16px; padding: 0 20px; }
+    .nav-links         { gap: 20px; }
+    .nav-links a       { font-size: 13.5px; }
+    .nav-cta           { gap: 8px; }
+    .nav-cta .btn      { padding: 11px 18px; font-size: 14px; }
+    .lang-current      { padding: 6px 10px; }
+}
+
+@media (max-width: 1320px) {
+    .nav-login         { display: none; }
+}
+
+@media (max-width: 1280px) {
+    .nav-links         { gap: 16px; }
+    .nav-links a       { font-size: 13px; }
+    .nav-cta .btn      { padding: 10px 14px; font-size: 13px; }
+    .lang-current      { font-size: 12px; padding: 5px 8px; }
 }
