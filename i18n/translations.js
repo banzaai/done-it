@@ -363,7 +363,13 @@ window.TRANSLATIONS = {
       cta_sub:   "Start direct je gratis proefperiode van 30 dagen<br>en ontdek Done-it zonder verplichtingen.",
       cta_btn1:  "Start mijn gratis proefperiode",
       cta_btn2:  "Bekijk de startgids",
-      cta_bubble:"✓ Geen bankkaart vereist · <strong>Alle features inbegrepen</strong> · Annuleer wanneer je wilt"
+      cta_bubble:"✓ Geen bankkaart vereist · <strong>Alle features inbegrepen</strong> · Annuleer wanneer je wilt",
+      placeholder_first: "Jan",
+      placeholder_last:  "Jansen",
+      placeholder_email: "jan.jansen@example.com",
+      placeholder_phone: "+32 123 45 67 89",
+      placeholder_company: "Mijn Bedrijf BV",
+      placeholder_msg: "Hallo, ik heb een vraag over Done-it..."
     },
     privacy: {
       hero_tag:  "Juridisch",
@@ -843,7 +849,13 @@ window.TRANSLATIONS = {
       cta_sub:   "Démarrez directement votre essai gratuit de 30 jours<br>et découvrez Done-it sans engagement.",
       cta_btn1:  "Commencer mon essai gratuit",
       cta_btn2:  "Voir le guide de démarrage",
-      cta_bubble:"\u2713 Aucune carte bancaire requise \u00b7 <strong>Toutes les fonctionnalités incluses</strong> \u00b7 Annulez quand vous voulez"
+      cta_bubble:"\u2713 Aucune carte bancaire requise \u00b7 <strong>Toutes les fonctionnalités incluses</strong> \u00b7 Annulez quand vous voulez",
+      placeholder_first: "Jean", 
+      placeholder_last:  "Dupont",
+      placeholder_email: "jean.dupont@example.com",
+      placeholder_phone: "+32 123 45 67 89",
+      placeholder_company: "Mon Entreprise BV",
+      placeholder_msg: "Bonjour, j'ai une question concernant Done-it..."
     },
     privacy: {
       hero_tag:  "Juridique",
@@ -1323,7 +1335,14 @@ window.TRANSLATIONS = {
       cta_sub:   "Start your free 30-day trial now<br>and discover Done-it with no obligations.",
       cta_btn1:  "Start my free trial",
       cta_btn2:  "View the getting started guide",
-      cta_bubble:"\u2713 No credit card required \u00b7 <strong>All features included</strong> \u00b7 Cancel anytime"
+      cta_bubble:"\u2713 No credit card required \u00b7 <strong>All features included</strong> \u00b7 Cancel anytime",
+      placeholder_first: "Jane",
+      placeholder_last:  "Doe",
+      placeholder_email: "jane.doe@example.com",
+      placeholder_phone: "+32 123 45 67 89",
+      placeholder_company: "My Company BV",
+      placeholder_msg: "Hello, I have a question about Done-it..."
+
     },
     privacy: {
       hero_tag:  "Legal",
@@ -1803,7 +1822,14 @@ window.TRANSLATIONS = {
       cta_sub:   "Inicia tu prueba gratuita de 30 días<br>y descubre Done-it sin compromisos.",
       cta_btn1:  "Iniciar mi prueba gratuita",
       cta_btn2:  "Ver la guía de inicio",
-      cta_bubble:"\u2713 Sin tarjeta de crédito \u00b7 <strong>Todas las funcionalidades incluidas</strong> \u00b7 Cancela cuando quieras"
+      cta_bubble:"\u2713 Sin tarjeta de crédito \u00b7 <strong>Todas las funcionalidades incluidas</strong> \u00b7 Cancela cuando quieras",
+      placeholder_first: "Javier",
+      placeholder_last:  "García",
+      placeholder_email: "javier.garcia@example.com",
+      placeholder_phone: "+34 123 45 67 89",
+      placeholder_company: "Mi Empresa BV",
+      placeholder_msg: "Hola, tengo una pregunta sobre Done-it..."
+
     },
     privacy: {
       hero_tag:  "Jurídico",

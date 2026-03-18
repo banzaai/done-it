@@ -103,16 +103,80 @@
     });
   }
 
+  /* ── geo-based language detection (first visit only) ── */
+
+  /**
+   * Calls geo.kamero.ai to determine the visitor's country/continent and
+   * picks a language accordingly.  The result is stored immediately so
+   * every subsequent page load skips the network call.
+   *
+   * Rules:
+   *   NA continent         → English
+   *   EU / Spain (ES)      → Spanish
+   *   EU / France (FR)     → French
+   *   EU / Belgium (BE) or Netherlands (NL) → Dutch
+   *   EU / other           → English
+   *   anything else        → English
+   *
+   * Returns a Promise that resolves when done (or on failure).
+   */
+  function detectLangFromGeo() {
+    return fetch('https://geo.kamero.ai/api/geo')
+      .then(function (res) { return res.json(); })
+      .then(function (geo) {
+        var continent = geo.continent;
+        var country   = geo.country;
+        var lang;
+
+        if (continent === 'NA') {
+          lang = 'en';
+        } else if (continent === 'EU') {
+          if (country === 'ES') {
+            lang = 'es';
+          } else if (country === 'FR') {
+            lang = 'fr';
+          } else if (country === 'BE' || country === 'NL') {
+            lang = 'nl';
+          } else {
+            lang = 'en';
+          }
+        } else {
+          lang = 'en';
+        }
+
+        var T = window.TRANSLATIONS || {};
+        if (T[lang]) {
+          localStorage.setItem(STORAGE_KEY, lang);
+        }
+      })
+      .catch(function () {
+        /* silently fall back to DEFAULT_LANG */
+      });
+  }
+
   /* ── init ── */
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      wireLangSwitcher();
-      applyTranslations();
-    });
-  } else {
+  function init() {
     wireLangSwitcher();
-    applyTranslations();
+
+    var stored = localStorage.getItem(STORAGE_KEY);
+    var T = window.TRANSLATIONS || {};
+
+    if (!stored || !T[stored]) {
+      /* First visit: detect language from IP geolocation, then render */
+      detectLangFromGeo().then(function () {
+        applyTranslations();
+      });
+    } else {
+      /* Returning visitor with a stored preference: render immediately */
+      applyTranslations();
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 
 })();
