@@ -14,7 +14,7 @@
  *       allow_headers=["*"],
  *   )
  */
-const CHATBOT_API_URL = 'http://localhost:8000'; // <-- change this after deployment
+const CHATBOT_API_URL = 'https://done-it-backend.onrender.com';
 
 (function () {
     // Detect page language from i18n preference, falling back to <html lang>
