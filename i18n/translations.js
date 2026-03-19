@@ -532,6 +532,7 @@ window.TRANSLATIONS = {
       success_title: "Aanvraag verstuurd!",
       success_sub:   "We ontvingen je aanvraag en nemen contact op om je account te activeren. Check ook je spam-map."
     }
+  },
   fr: {
     nav: {
       features:     "Fonctionnalités",
@@ -1056,6 +1057,7 @@ window.TRANSLATIONS = {
       success_title: "Demande envoyée !",
       success_sub:   "Nous avons reçu votre demande et vous contacterons pour activer votre compte. Vérifiez aussi vos spams."
     }
+  },
   en: {
     nav: {
       features:     "Features",
@@ -1581,6 +1583,7 @@ window.TRANSLATIONS = {
       success_title: "Request sent!",
       success_sub:   "We received your request and will contact you to activate your account. Please also check your spam folder."
     }
+  },
   es: {
     nav: {
       features:     "Funcionalidades",
@@ -2106,3 +2109,5 @@ window.TRANSLATIONS = {
       success_title: "¡Solicitud enviada!",
       success_sub:   "Hemos recibido tu solicitud y nos pondremos en contacto para activar tu cuenta. Revisa también tu carpeta de spam."
     }
+  }
+};
